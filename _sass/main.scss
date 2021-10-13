@@ -52,14 +52,12 @@ section.full {
   padding-right: 0;
 }
 
-
 //NAV BAR
 body > nav {
   position: re;
 }
 
-#menuToggle
-{
+#menuToggle {
   display: block;
   position: absolute;
   width: 100%;
@@ -68,9 +66,9 @@ body > nav {
   left: 0;
   padding-left: 20px;
   padding-top: 10px;
-  
+
   z-index: 1;
-  
+
   -webkit-user-select: none;
   user-select: none;
 
@@ -79,22 +77,18 @@ body > nav {
   }
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
   color: #232323;
-  
+
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
-  color:$blush;
+#menuToggle a:hover {
+  color: $blush;
 }
 
-
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -102,61 +96,53 @@ body > nav {
   top: 4px;
   left: 16px;
   font-size: 50px;
-  
+
   cursor: pointer;
-  
+
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
+
   -webkit-touch-callout: none;
 }
 
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: white;
   border-radius: 3px;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -164,51 +150,54 @@ body > nav {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: absolute;
   width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li
-{
+#menu li {
   padding: 5px 0;
 }
 
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
 .li-title {
-font-family: "NeuePlak-CompBlack";
-font-size: 60px;
-line-height: 50px;
-color: $greyish-brown;
-text-transform: uppercase;
+  font-family: "NeuePlak-CompBlack";
+  font-size: 60px;
+  line-height: 50px;
+  color: $greyish-brown;
+  text-transform: uppercase;
 }
 
 .li-text {
-font-family: $family-secondary;
-font-size: 16px;
-line-height: 30px;
-color: $greyish-brown;
-font-weight: 500;
-text-transform: uppercase;
+  font-family: $family-secondary;
+  font-size: 16px;
+  line-height: 30px;
+  color: $greyish-brown;
+  font-weight: 500;
+  text-transform: uppercase;
 }
+
+.pink-container {
+	background-color: $blush;
+	max-width: 100%;
+	height: 75px;
+  }
 
 //VIDEO
 .videoBlock {
@@ -415,6 +404,7 @@ text-transform: uppercase;
 .button1 {
   background-color: white;
   position: relative;
+  border: white;
 
   @media (min-width: 1200px) {
     height: 54px;
@@ -422,7 +412,6 @@ text-transform: uppercase;
     display: block;
     line-height: 35px;
     border-radius: 26px;
-    border: white;
     margin: 40px auto;
   }
 
@@ -432,7 +421,6 @@ text-transform: uppercase;
     display: block;
     line-height: 35px;
     border-radius: 26px;
-    border: 3px solid $cherry-red;
     margin: 40px auto;
   }
 
@@ -442,7 +430,6 @@ text-transform: uppercase;
     display: block;
     line-height: 35px;
     border-radius: 27px;
-    border: 2px solid $cherry-red;
     margin: 10px auto;
   }
 
@@ -452,7 +439,6 @@ text-transform: uppercase;
     display: block;
     line-height: 35px;
     border-radius: 27px;
-    border: 1px solid $cherry-red;
     margin: 5px auto;
   }
 }
@@ -722,8 +708,6 @@ h2 {
     font-size: 16px;
     line-height: 30px;
   }
- 
-
 }
 .text__izazov {
   font-family: $family-secondary;
@@ -761,7 +745,7 @@ h2 {
     padding-left: 50%;
     padding-right: 10%;
     padding-bottom: 10%;
-   margin-top: -100px;
+    margin-top: -100px;
   }
 
   @media (max-width: 900px) {
@@ -804,7 +788,6 @@ h2 {
   text-transform: uppercase;
 }
 
-
 //FOOTER
 .footer {
   background-color: $white;
@@ -842,4 +825,3 @@ h2 {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-
