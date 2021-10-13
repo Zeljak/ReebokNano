@@ -191,12 +191,20 @@ body > nav {
   color: $greyish-brown;
   font-weight: 500;
   text-transform: uppercase;
+  margin-bottom: 45px;
+  margin-top: 7px;
 }
 
 .pink-container {
 	background-color: $blush;
 	max-width: 100%;
 	height: 75px;
+  }
+
+  .oznaka-menu {
+    width: 15%;
+    height: 15%;
+    margin-bottom: -15px;
   }
 
 //VIDEO
@@ -443,6 +451,20 @@ body > nav {
   }
 }
 
+.play-pink {
+
+  @media (min-width: 1200px) {
+    height: 50px;
+  }
+  @media (max-width: 900px) {
+    height: 25px;
+  }
+  @media (max-width: 767px) {
+  height: 90%;
+  margin-bottom: 5px;
+  }
+}
+
 .tenisica-small {
   display: flex;
   justify-content: center;
@@ -450,7 +472,7 @@ body > nav {
   @media (min-width: 1200px) {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 170px;
   }
 
   @media (max-width: 1200px) {
@@ -467,7 +489,7 @@ body > nav {
     width: 40%;
     height: 40%;
     margin-left: 30%;
-    margin-top: 30px;
+    margin-top: 45px;
   }
 }
 
@@ -493,12 +515,12 @@ body > nav {
 .container-columns {
   margin-bottom: 10%;
   @media (min-width: 1200px) {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   @media (max-width: 1200px) {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   @media (max-width: 900px) {
@@ -533,6 +555,7 @@ h1 {
   @media (max-width: 767px) {
     font-size: 26px;
     line-height: 30px;
+    margin-top: -15px;
   }
 }
 
@@ -585,7 +608,9 @@ h2 {
 
   @media (max-width: 767px) {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    padding-top: 20px;
   }
 }
 
@@ -609,7 +634,7 @@ h2 {
 
   @media (max-width: 767px) {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 40px;
   }
 }
 
@@ -653,27 +678,29 @@ h2 {
   }
 
   @media (max-width: 900px) {
-    height: 28px;
-    width: 165px;
+    height: 45px;
+    width: 180px;
     display: block;
     line-height: 35px;
     border-radius: 27px;
     border: 2px solid $blush;
-    margin: 10px auto;
+    margin: 20px auto;
     font-size: 12px;
+    padding-left: 35px;
+    padding-top: 3px;
   }
 
   @media (max-width: 767px) {
     display: none;
-    height: 20px;
-    width: 120px;
+    height: 30px;
+    width: 125px;
     display: block;
-    line-height: 35px;
     border-radius: 27px;
     border: 1px solid $blush;
-    margin: 5px auto;
-    font-size: 12px;
-    line-height: 150px;
+    margin: 15px auto;
+    font-size: 8px;
+    line-height: 24px;
+    padding-left: 25px;
   }
 }
 
@@ -736,16 +763,16 @@ h2 {
 
 .wrapper-izazov {
   @media (min-width: 1200px) {
-    padding-left: 50%;
+    padding-left: 51%;
     padding-right: 10%;
     padding-bottom: 10%;
-    margin-top: -100px;
+    margin-top: -145px;
   }
   @media (max-width: 1200px) {
-    padding-left: 50%;
+    padding-left: 51%;
     padding-right: 10%;
     padding-bottom: 10%;
-    margin-top: -100px;
+    margin-top: -110px;
   }
 
   @media (max-width: 900px) {
@@ -759,7 +786,7 @@ h2 {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
-    padding-top: 20%;
+    padding-top: 75px;
   }
 }
 
