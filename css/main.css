@@ -12031,8 +12031,8 @@ body > nav {
 }
 @media (max-width: 1200px) {
   .container-columns {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 @media (max-width: 900px) {
@@ -12473,7 +12473,7 @@ h2 {
   .text__izazov-naslov-left {
     font-size: 20px;
     line-height: 40px;
-    margin-left: -103%;
+    margin-left: -113%;
     padding-right: 100%;
   }
 }
@@ -12511,7 +12511,7 @@ h2 {
   .text__izazov-left {
     font-size: 20px;
     line-height: 40px;
-    margin-left: -103%;
+    margin-left: -113%;
     padding-right: 100%;
   }
 }
